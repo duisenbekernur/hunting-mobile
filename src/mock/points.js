@@ -8,11 +8,59 @@ import {
   qazaqeliIcon,
   sakenIcon,
   triatlonIcon,
-} from "./mapIcons.js";
+} from "src/mock/mapIcons.js";
 
 export const basicPoints = [
   {
     id: 1,
+    title: "Алтын Емел",
+    region: "Алматинская область",
+    rating: 5,
+    description:
+      "Национальный парк с разнообразной фауной, включая джейранов, архаров и косуль. Разрешена охота по специальным лицензиям.",
+    animals: ["Джейран", "Архар", "Косуля"],
+    coords: [44.4983, 78.4825],
+    imgs: [
+      "https://example.com/images/altyn_emel_landscape.jpg",
+      "https://example.com/images/altyn_emel_djeiran.jpg",
+      "https://example.com/images/altyn_emel_archar.jpg",
+    ],
+    icon: botsadIcon,
+  },
+  {
+    id: 2,
+    title: "Куршаб",
+    region: "Восточно-Казахстанская область",
+    rating: 5,
+    description:
+      "Лесные горы, обитают маралы и сибирские козероги, популярное место для охоты на крупного зверя.",
+    animals: ["Марал", "Сибирский козерог"],
+    coords: [48.0595, 86.1546],
+    imgs: [
+      "https://example.com/images/kurshab_mountains.jpg",
+      "https://example.com/images/kurshab_maral.jpg",
+      "https://example.com/images/kurshab_kozerog.jpg",
+    ],
+    icon: botsadIcon,
+  },
+  {
+    id: 3,
+    title: "Кызылжар",
+    region: "Северо-Казахстанская область",
+    rating: 5,
+    description:
+      "Традиционное место для охоты на волков и лисиц, а также на мелких зверей, находящихся в лесостепной зоне.",
+    animals: ["Волк", "Лисица"],
+    coords: [54.8533, 69.1693],
+    imgs: [
+      "https://example.com/images/kyzyljar_landscape.jpg",
+      "https://example.com/images/kyzyljar_wolf.jpg",
+      "https://example.com/images/kyzyljar_fox.jpg",
+    ],
+    icon: botsadIcon,
+  },
+  {
+    id: 10,
     title: "Национальный музей РК",
     coords: [51.11823, 71.46938],
     icon: museumIcon,
@@ -32,7 +80,7 @@ export const basicPoints = [
       "Қазақстан Республикасының Ұлттық музейі — Астана қаласында Тәуелсіздік алаңында орналасқан 2014 жылы 2 шілдеде ашылған мұражай. «Мәдени мұра» мемлекеттік бағдарламасы шеңберінде табылған көптеген құнды дүниелер Қазақстан Республикасы Ұлттық музейінің баға жетпес қорын құрайды.",
   },
   {
-    id: 2,
+    id: 11,
     title: "Байтерек",
     coords: [51.12828, 71.43052],
     icon: bayterekIcon,
@@ -50,7 +98,7 @@ export const basicPoints = [
       "Бәйтерек – Астана қаласындағы сәулет құрылыс кешені, сәулет өнерінің бірегей туындысы. Елорданың ең көрнекті ғимараттарының бірі.",
   },
   {
-    id: 3,
+    id: 12,
     title: "Нұр Әлем",
     coords: [51.08935, 71.416],
     icon: expoIcon,
@@ -65,7 +113,12 @@ export const basicPoints = [
       startTime: "10:00",
       stopTime: "21:00",
     },
-    categories: ["Высокая культура", "Культурные мероприятия", "Искусство", "Технологии"],
+    categories: [
+      "Высокая культура",
+      "Культурные мероприятия",
+      "Искусство",
+      "Технологии",
+    ],
     description:
       '"Нұр Әлем" - Астана ЭКСПО-2017 Көрмесінің архитектуралық символына айналған Көрме кешенінің орталық нысаны. Бұл диаметрі 80 метр, биіктігі 100 метр құрайтын әлемдегі ең үлкен сфералық ғимарат. Келушілер Қазақстанның тарихы, мәдениеті, салт-дәстүрі, көрікті жерлері, сонымен қатар елдің жетістіктерімен таныса алатындай, ғимараттың 1 қабатында Қазақстанның павильоны орналасқан.',
   },
@@ -117,7 +170,9 @@ export const basicPoints = [
     rating: 5,
     grades: 122,
     subtitle: "Монументы",
-    imgs: ["https://upload.wikimedia.org/wikipedia/ru/6/6e/Kazakh_Eli_monument.JPG"],
+    imgs: [
+      "https://upload.wikimedia.org/wikipedia/ru/6/6e/Kazakh_Eli_monument.JPG",
+    ],
     color: "purple",
     workTimes: {
       startTime: "00:00",

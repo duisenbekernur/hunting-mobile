@@ -1,0 +1,5 @@
+{
+  "appId": "com.hunting.app",
+  "appName": "hunting-web3",
+  "webDir": "dist/spa"
+}
